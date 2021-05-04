@@ -1,0 +1,43 @@
+<!doctype html>
+<!-- pick4WithFunction.html                               Zara Escamilla -->
+<!-- This web page generates pick-4 lottery using functions in the HEAD as opposed to the BODY. -->
+<!-- Exercise 10.1 -->
+<!-- =========================================== -->
+
+<html>
+ <head>
+   <title> Pick-4 Lottery w/ fxn </title>
+   <script type="text/javascript">
+         function GenerateNumber()
+         //Assumes:  value of 0 and maxBox define the range for the value
+         //Results: picks a random number and displays it in outputDiv
+         { 
+            maxVal=parseFloat(document.getElementById('maxBox').value);
+               number=Math.floor(Math.random()*((maxVal) + 1)) ;
+               number1=Math.floor(Math.random()*((maxVal) +1)) ;
+               number2=Math.floor(Math.random()*((maxVal) +1)) ;
+               number3=Math.floor(Math.random()*((maxVal) +1)) ;
+               document.getElementById('outputDiv').innerHTML= 
+                     'The Pick-4 winners are: ' + number + ' ,  ' + number1 + ' ,  ' + number2 + ' ,  ' +
+                      number3+  ' .  ' ; 
+           } 
+  </script>
+<!-- pay close attention to the punctuation and closing tags -->
+ </head>
+
+ <body style=text-align:center>
+   <h2 style=color:blue> Pick-4 Lottery ! </h2>
+   <p>
+    Enter the maximum ball number (the lowest ball number is always 0): 
+     <input type="text" id="maxBox" size=3 value=9>. 
+   
+   </p>
+   <input type="button" value="Generate Pick-4 Winner" 
+       onclick="GenerateNumber()";>  
+<!-- label the onclick with what you labeled the function -->
+<!-- I think I got this one pretty well -->
+<!-- Yes, the site works as expected -->
+   <hr>
+   <div id="outputDiv"></div>
+ </body>
+</html>

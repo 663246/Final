@@ -1,0 +1,200 @@
+<!--doctype html -->
+<!-- pirate.html                    Zara Escamilla -->
+<!-- Simple page that translates words/phrases from  -->
+<!-- English to pirate at the click of a button.   -->
+<!-- A more elaborated translation page -->
+<!-- EDIT: this page now includes images of pirates -->
+<!-- Exercise 3: This page now has a new button for a new line -->
+<!-- =================================================== -->
+
+<html>
+ <head>
+   <title> Pirate Translator by Zara</title>
+ </head>
+
+ <body style="text-align:center">
+   <h2 style=color:green> Land Lubber's Pirate Translator </h2>
+   <p>Welcome pirates! Click on the buttons to translate
+      words and/or phrases from English to pirate talk.
+
+   <div style="text-align:center">
+     <img src="pirate.jpg" alt="pirate image" height="250"
+          onmouseover="this.src='parrot.jpg'; this.height=250;"
+          onmouseout="this.src='pirate.jpg'; this.height=250;">
+
+   </div>
+   </p>
+<!-- Now I must separate these words/phrases by category using an HTML table -->
+   <p>
+<table style="margin-left:auto;margin-right:auto"margin-left:auto;margin-right:auto">
+<tr><td> Greetings: </td> <td>
+     <input type="button" value="hello" 
+                       onmouseover="this.style.backgroundColor='lightpink';"
+                       onmouseout="this.style.backgroundColor='lightblue';"
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'ahoy ';">
+</td><td>
+
+     <input type="button" value="hi" 
+                       onmouseover="this.style.backgroundColor='lightpink';"
+                       onmouseout="this.style.backgroundColor='lightblue';"
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'Yo! ';">
+</td><td>
+
+     <input type="button" value="pardon me" 
+                       onmouseover="this.style.backgroundColor='lightpink';"
+                       onmouseout="this.style.backgroundColor='lightblue';"
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'avast ';">
+</td><td>
+
+     <input type="button" value="excuse me" 
+                       onmouseover="this.style.backgroundColor='lightpink';"
+                       onmouseout="this.style.backgroundColor='lightblue';"
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'arrr ';">
+</td><td></tr>
+<tr><td> People: </td><td>
+
+     <input type="button" value="sir" 
+                       onmouseover="this.style.backgroundColor='lightpink';"
+                       onmouseout="this.style.backgroundColor='lightblue';"
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'matey ';">
+</td><td>
+
+     <input type="button" value="madam" 
+                       onmouseover="this.style.backgroundColor='lightpink';"
+                       onmouseout="this.style.backgroundColor='lightblue';"
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'ye proud beauty ';">
+</td><td>
+
+     <input type="button" value="stranger" 
+                       onmouseover="this.style.backgroundColor='lightpink';"
+                       onmouseout="this.style.backgroundColor='lightblue';"
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'scurvy dog ';">
+</td><td>
+
+     <input type="button" value="officer" 
+                       onmouseover="this.style.backgroundColor='lightpink';"
+                       onmouseout="this.style.backgroundColor='lightblue';"
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'foul blaggart ';">
+</td></tr>
+<tr><td> Questions: </td><td>
+
+     <input type="button" value="can you help me find" 
+                       onmouseover="this.style.backgroundColor='lightpink';"
+                       onmouseout="this.style.backgroundColor='lightblue';"
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'know ye ';">
+</td><td>
+
+     <input type="button" value="where is" 
+                       onmouseover="this.style.backgroundColor='lightpink';"
+                       onmouseout="this.style.backgroundColor='lightblue';"
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'whar be ';">
+</td><td>
+
+     <input type="button" value="how far is it to" 
+                       onmouseover="this.style.backgroundColor='lightpink';"
+                       onmouseout="this.style.backgroundColor='lightblue';"
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'how many leagues to ';">
+
+</td><td>
+     <input type="button" value="is that" 
+                       onmouseover="this.style.backgroundColor='lightpink';"
+                       onmouseout="this.style.backgroundColor='lightblue';"
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'be that ';">
+</td></tr>
+<tr><td> Articles: </td><td>
+
+     <input type="button" value="the" 
+                       onmouseover="this.style.backgroundColor='lightpink';"
+                       onmouseout="this.style.backgroundColor='lightblue';"
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'th  ';">
+</td><td>
+
+     <input type="button" value="nearby" 
+                       onmouseover="this.style.backgroundColor='lightpink';"
+                       onmouseout="this.style.backgroundColor='lightblue';"
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'broadside ';">
+</td><td>
+
+     <input type="button" value="my" 
+                       onmouseover="this.style.backgroundColor='lightpink';"
+                       onmouseout="this.style.backgroundColor='lightblue';"
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'me ';">
+</td><td>
+
+     <input type="button" value="your" 
+                       onmouseover="this.style.backgroundColor='lightpink';"
+                       onmouseout="this.style.backgroundColor='lightblue';"
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'yer ';">
+</td></tr>
+<tr><td> Places: </td><td>
+
+     <input type="button" value="restroom" 
+                       onmouseover="this.style.backgroundColor='lightpink';"
+                       onmouseout="this.style.backgroundColor='lightblue';"
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'head ';">
+</td><td>
+
+     <input type="button" value="restaurant" 
+                       onmouseover="this.style.backgroundColor='lightpink';"
+                       onmouseout="this.style.backgroundColor='lightblue';"
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'galley ';">
+</td><td>
+
+     <input type="button" value="hotel" 
+                       onmouseover="this.style.backgroundColor='lightpink';"
+                       onmouseout="this.style.backgroundColor='lightblue';"
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'fleabag inn ';">
+</td><td>
+
+     <input type="button" value="bank" 
+                       onmouseover="this.style.backgroundColor='lightpink';"
+                       onmouseout="this.style.backgroundColor='lightblue';"
+            onclick="document.getElementById('outputDiv').innerHTML= 
+                       document.getElementById('outputDiv').innerHTML + 'buried treasure ';">
+</td></tr>
+
+
+
+<tr><td> </td><td>
+      <input type="button" value="Clear the Translation"
+                       onmouseover="this.style.backgroundColor='lightpink';"
+                       onmouseout="this.style.backgroundColor='lightblue';"
+          onclick="document.getElementById('outputDiv').innerHTML=' ';">
+</td><td>
+      <input type="button" value="New Line"
+                       onmouseover="this.style.backgroundColor='lightpink';"
+                       onmouseout="this.style.backgroundColor='lightblue';"
+               onclick="document.getElementById('outputDiv').innerHTML =
+                               document.getElementById('outputDiv').innerHTML + '<br>'  ; ">
+</td><tr>
+</table>
+<!-- check old exercises --> 
+<!-- I head over to the discussion board and saw that Dr. O'C provided another student with a tip on how to make -->
+<!-- the NEW LINE button work -->
+  </p>
+   <hr>
+   <div id="outputDiv">
+    
+
+</div>
+ </body>
+</html>
